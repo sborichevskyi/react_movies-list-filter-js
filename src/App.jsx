@@ -13,7 +13,7 @@ export const App = () => {
     const newMovies = allMovies.filter(
       movie =>
         movie.title.toLowerCase().includes(query.toLowerCase()) ||
-        movie.description.toLowerCase().includes(query.toLowerCase())
+        movie.description.toLowerCase().includes(query.toLowerCase()),
     );
 
     setVisibleMovies(newMovies);
